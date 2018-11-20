@@ -6,6 +6,27 @@
  var utenteDichiara = prompt("Scrivi pari o dispari");
  console.log(utenteDichiara);
 
+    // Per verificare che l'utente inserisca correttamente i dati posso:
+    // Usare questo metodo
+
+    // if (utenteDichiara == "pari" || utenteDichiara == "dispari") {
+    //   alert("ok");
+    //  }
+    // else {
+    //   alert("errore, ricarica la pagina")
+    // }
+
+    // Usare quest'altro metodo
+    var valori_validi = ["pari", "dispari"];
+    if (valori_validi.includes(utenteDichiara)) {
+      alert("valore corretto");
+    }
+    else {
+      alert("valore errato");
+    }
+
+
+
  // 2) CHIEDIAMO ALL'UTENTE DI SCEGLIERI UN NUMERO DA 1 E 5
 
  var numeroUtente = parseInt(prompt("Scegli un numero da 1 e 5"));
